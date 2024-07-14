@@ -5,6 +5,5 @@
 Run:
 ```bash
 direnv allow
-nix develop
 cabal run
 ```
