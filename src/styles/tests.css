@@ -1,0 +1,125 @@
+button {
+  background-color: #a09f9c;
+  border-radius: 100%;
+  border: 0.1em solid black;
+  margin: 0;
+  animation: slide-right 1000ms cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+button:hover {
+  background-color: blue;
+  background-image: none;
+  color: white;
+}
+
+radio {
+  padding: 3em;
+  background-color: white;
+  background-image: none;
+}
+radio:active {
+  background-image: none;
+  color: white;
+}
+radio:checked {
+  background-image: none;
+  border: 0.1em solid black;
+  animation: bbb 1000ms cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+#but1 radio:checked {
+  animation: bbb1 1000ms cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+#but2 radio:checked {
+  animation: bbb2 1000ms cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.animation-childs {
+  background-color: green;
+  border-radius: 100%;
+  /* border: 0.1em solid black; */
+  opacity: 0.2;
+  /* margin-bottom: 2em; */
+}
+
+.animation-child-1 {
+  transition: margin 320ms, background-color 500ms;
+}
+
+.animation-child-2 {
+  transition: margin 340ms, background-color 500ms;
+}
+
+.animation-child-3 {
+  transition: margin 360ms, background-color 500ms;
+}
+
+.animation-child-4 {
+  transition: margin 380ms, background-color 500ms;
+}
+
+.animation-child-5 {
+  transition: margin 400ms, background-color 500ms;
+}
+
+.animation-child-6 {
+  transition: margin 420ms, background-color 500ms;
+}
+
+.animation-child-7 {
+  transition: margin 440ms, background-color 500ms;
+}
+
+.animation-child-8 {
+  transition: margin 460ms, background-color 500ms;
+}
+
+.animation-child-9 {
+  transition: margin 480ms, background-color 500ms;
+}
+
+.animation-child-10 {
+  transition: margin 500ms, background-color 500ms;
+}
+
+.transition-none {
+  transition: none;
+}
+
+.color_but1 {
+  background-color: blue;
+}
+
+.color_but2 {
+  background-color: rgb(252, 70, 107);
+}
+
+.a_opp {
+  animation: opp 1000ms cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes opp {}
+@keyframes bbb {
+  50% {
+    background: radial-gradient(circle, green 0%, rgba(0, 0, 0, 0) 0%);
+  }
+  100% {
+    background: radial-gradient(circle, green 100%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+@keyframes bbb1 {
+  50% {
+    background: radial-gradient(circle, blue 0%, rgba(0, 0, 0, 0) 0%);
+  }
+  100% {
+    background: radial-gradient(circle, blue 100%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+@keyframes bbb2 {
+  50% {
+    background: radial-gradient(circle, rgb(252, 70, 107) 0%, rgba(0, 0, 0, 0) 0%);
+  }
+  100% {
+    background: radial-gradient(circle, rgb(252, 70, 107) 100%, rgba(0, 0, 0, 0) 100%);
+  }
+}/*# sourceMappingURL=tests.css.map */

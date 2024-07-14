@@ -1,0 +1,101 @@
+@charset "utf-8"
+
+button
+  background-color: #a09f9c
+  border-radius: 100%
+  border: 0.1em solid black
+  margin: 0
+  animation: slide-right 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards
+
+  &:hover
+    background-color: blue
+    background-image: none
+    color: white
+
+radiobutton
+  background: rgba(0, 0, 0, 0) none
+//v border-radius: 100%;
+// border: 0.1em solid black;
+
+
+radio
+  &
+    padding: 3em
+    background-color: white
+    background-image: none
+
+  &:active
+    background-image: none
+    color: white
+
+  &:checked
+    background-image: none
+    border: 0.1em solid black
+    animation: bbb 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards
+//  color: green;
+// background-color: green;
+//  background: radial-gradient(circle, rgba(0, 0, 0, 0) 10%, green 10%);
+// transition: background 300ms cubic-bezier(.8,-0.92,1,1.5);
+
+#but1 radio:checked
+  animation: bbb1 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards
+
+#but2 radio:checked
+  animation: bbb2 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards
+
+.animation-childs
+  background-color: green
+  border-radius: 100%
+  /* border: 0.1em solid black; */
+  opacity: 0.2
+/* margin-bottom: 2em; */
+
+@for $i from 1 through 10
+  .animation-child-#{$i}
+    transition: margin 300ms + $i * 20, background-color 500ms
+
+.transition-none
+  transition: none
+
+.color_but1
+  background-color: blue
+
+.color_but2
+  background-color: rgba(252, 70, 107, 1)
+
+.a_opp
+  animation: opp 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards
+
+@keyframes opp
+// 0%
+//  opacity: 1;
+
+// 10%
+//     opacity: 1
+
+// 90%
+//     opacity: 1
+
+// 100%
+//     opacity: 1
+
+@keyframes bbb
+  50%
+    background: radial-gradient(circle, green 0%, rgba(0, 0, 0, 0) 0%)
+
+  100%
+    background: radial-gradient(circle, green 100%, rgba(0, 0, 0, 0) 100%)
+
+@keyframes bbb1
+  50%
+    background: radial-gradient(circle, blue 0%, rgba(0, 0, 0, 0) 0%)
+
+  100%
+    background: radial-gradient(circle, blue 100%, rgba(0, 0, 0, 0) 100%)
+
+@keyframes bbb2
+  50%
+    background: radial-gradient(circle, rgba(252, 70, 107, 1) 0%, rgba(0, 0, 0, 0) 0%)
+
+  100%
+    background: radial-gradient(circle, rgba(252, 70, 107, 1) 100%, rgba(0, 0, 0, 0) 100%)
